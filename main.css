@@ -54,6 +54,12 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 
 
 /* Buttons & links with hover animations */
@@ -109,9 +115,13 @@ button:hover {
 
 /* --- Typography --- */
 
-h1 {
+h1, h2, h3 {
 	color: #fff;
 	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 20px;
 }
 
 .intro {
@@ -165,12 +175,6 @@ h1 {
 	letter-spacing: 2px;
 }
 
-.navbar__list,
-.footer__list {
-	list-style: none;
-	padding: 0;
-}
-
 .navbar__list {
 	margin: 0 0 0 auto;
 }
@@ -211,8 +215,31 @@ h1 {
 
 .content {
 	display: flex;
+	flex-wrap: wrap;
+	line-height: 1.8;
 	margin: auto;
-	max-width: 854px;
+	max-width: 926px;
+}
+
+.content h1 {
+	font-size: 38px;
+}
+
+.content h1 span {
+	display: block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 0;
+    margin-bottom: 8px;
+}
+
+.content p {
+	margin: 24px 0;
+}
+
+.content a {
+	color: #eba300;
+	font-weight: 600;
 }
 
 .about,
@@ -220,13 +247,26 @@ h1 {
 	margin-bottom: 120px;
 }
 
-/*.fixed-top {
+.col-md,
+.col-sm {
+	max-width: 100%;
+}
+
+.info h2 {
+	margin: 24px 0 14px;
+}
+
+.info__list-item {
+	margin: 8px 0;
+}
+
+.fixed-top {
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	z-index: 1000;
-}*/
+}
 
 .fixed-bottom {
 	bottom: 0;
@@ -240,6 +280,10 @@ h1 {
 	position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.top-buffer {
+	padding-top: 120px;
 }
 
 .headshot {
@@ -388,7 +432,18 @@ h1 {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-	
+	.col-md {
+		margin-right: 30px;
+		max-width: 580px;
+		width: 100%;
+	}
+	.col-sm {
+		margin-left: auto;
+		max-width: 226px;
+	}
+	.info h2:first-of-type {
+		margin-top: 76px;
+	}
 }
 
 /* Large devices (desktops, 960px and up) */
