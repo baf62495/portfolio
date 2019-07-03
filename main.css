@@ -176,12 +176,7 @@ h2 {
 }
 
 .navbar__list {
-	margin: 0 0 0 auto;
-}
-
-.navbar__list-item {
-	padding: 0 .625em;
-	margin: 0 .625em;
+	display: none;
 }
 
 .navbar a,
@@ -221,8 +216,16 @@ h2 {
 	max-width: 926px;
 }
 
+.contact {
+	height: 100vh;
+}
+
 .content h1 {
 	font-size: 38px;
+}
+
+.contact h1 {
+	font-size: 28px;
 }
 
 .content h1 span {
@@ -280,6 +283,10 @@ h2 {
 	position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.vertical-margin-auto {
+	margin: auto 0;
 }
 
 .top-buffer {
@@ -432,6 +439,16 @@ h2 {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+	.contact h1 {
+		font-size: 38px;
+	}
+}
+
+/* Large devices (desktops, 960px and up) */
+@media screen and (min-width: 960px) {
+	.mob__contact-link {
+		display: none;
+	}
 	.col-md {
 		margin-right: 30px;
 		max-width: 580px;
@@ -444,16 +461,17 @@ h2 {
 	.info h2:first-of-type {
 		margin-top: 76px;
 	}
-}
-
-/* Large devices (desktops, 960px and up) */
-@media screen and (min-width: 960px) {
-	.mob__contact-link {
-		display: none;
-	}
 	.navbar,
 	.footer {
 		padding: 12px 64px;
+	}
+	.navbar__list {
+		display: flex;
+		margin: 0 0 0 auto;
+	}
+	.navbar__list-item {
+		padding: 0 .625em;
+		margin: 0 .625em;
 	}
 	.footer {
 		display: block;
