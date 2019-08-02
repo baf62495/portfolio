@@ -268,7 +268,7 @@ h2 {
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 1000;
+	/*z-index: 2;*/
 }
 
 .fixed-bottom {
@@ -276,7 +276,7 @@ h2 {
 	left: 0;
 	position: fixed;
 	right: 0;
-	z-index: 1000;
+	/*z-index: 2;*/
 }
 
 .vertical-center {
@@ -488,5 +488,30 @@ h2 {
 
 
 
+
+
+
+.mobnav {
+	visibility: hidden;
+    clip-path: inset(0 0 0 100%);
+    -webkit-clip-path: inset(0 0 0 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #191919;
+    z-index: 99999;
+    padding: 0 32px;
+    transition: visibility 0s 0s,all .5s cubic-bezier(.785,.135,.15,.86) .1s;
+}
+
+.mobnav__list-container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 32px;
+}
 
 
