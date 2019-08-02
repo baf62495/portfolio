@@ -229,7 +229,7 @@ h2 {
 }
 
 .contact {
-	height: 100vh;
+	height: 99vh;
 }
 
 .content h1 {
@@ -504,7 +504,7 @@ h2 {
 
 
 
-.mobnav {
+.mobnav__overlay {
 	visibility: hidden;
     clip-path: inset(0 0 0 100%);
     -webkit-clip-path: inset(0 0 0 100%);
@@ -514,7 +514,7 @@ h2 {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 99vh;
     background: #191919;
     padding: 20px 28px;
     z-index: 99;
@@ -540,7 +540,7 @@ h2 {
 }
 
 .mobnav__list-item {
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: 600;
 	margin: 0 0 1em;
 }
@@ -551,7 +551,7 @@ h2 {
 
 .mobnav__menu-toggle {
   width: 24px;
-  height: 4px;
+  height: 3px;
   margin-left: auto;
   background: #fff;
   position: relative;
@@ -561,7 +561,7 @@ h2 {
   transition: all 0.3s ease;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 3px;
   z-index: 999;
 }
 
@@ -569,7 +569,7 @@ h2 {
   content: '';
   display: block;
   width: 24px;
-  height: 4px;
+  height: 3px;
   background: #fff;
   position: absolute;
   z-index: -1;
@@ -579,15 +579,15 @@ h2 {
   transition: all 0.3s ease;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .mobnav__menu-toggle:before {
-  top: -8px;
+  top: -7px;
 }
 
 .mobnav__menu-toggle:after {
-  top: 8px;
+  top: 7px;
 }
 
 .menu-toggle__active .mobnav__menu-toggle {
@@ -596,7 +596,6 @@ h2 {
 
 .menu-toggle__active .mobnav__menu-toggle:before, .menu-toggle__active .mobnav__menu-toggle:after {
   top: 0;
-  /*width: 24px;*/
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
