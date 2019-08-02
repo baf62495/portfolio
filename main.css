@@ -229,7 +229,7 @@ h2 {
 }
 
 .contact {
-	height: 99vh;
+	height: 100vh;
 }
 
 .content h1 {
@@ -514,7 +514,7 @@ h2 {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 99vh;
+    height: 100%;
     background: #191919;
     padding: 20px 28px;
     z-index: 99;
