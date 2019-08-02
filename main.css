@@ -281,7 +281,7 @@ h2 {
 	top: 0;
 	right: 0;
 	left: 0;
-	/*z-index: 2;*/
+	z-index: 1;
 }
 
 .fixed-bottom {
@@ -289,7 +289,6 @@ h2 {
 	left: 0;
 	position: fixed;
 	right: 0;
-	/*z-index: 2;*/
 }
 
 .vertical-center {
@@ -509,23 +508,104 @@ h2 {
 	visibility: hidden;
     clip-path: inset(0 0 0 100%);
     -webkit-clip-path: inset(0 0 0 100%);
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background: #191919;
-    z-index: 99999;
-    padding: 0 32px;
+    padding: 20px 28px;
+    z-index: 99;
     transition: visibility 0s 0s,all .5s cubic-bezier(.785,.135,.15,.86) .1s;
 }
 
+.mobnav__open {
+	visibility: visible;
+	clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+}
+
 .mobnav__list-container {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 32px;
+	margin: auto;
+}
+
+.mobnav__close {
+	margin-left: auto;
+}
+
+.mobnav__list {
+	text-align: center;
+}
+
+.mobnav__list-item {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 1em 0;
 }
 
 
+
+
+
+.mobnav__menu-toggle {
+  width: 24px;
+  height: 4px;
+  margin-left: auto;
+  background: #fff;
+  position: relative;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.mobnav__menu-toggle:before, .mobnav__menu-toggle:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  z-index: -1;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.mobnav__menu-toggle:before {
+  top: -8px;
+}
+
+.mobnav__menu-toggle:after {
+  top: 8px;
+}
+
+.menu-toggle__active .mobnav__menu-toggle {
+  background: none;
+}
+
+.menu-toggle__active .mobnav__menu-toggle:before, .menu-toggle__active .mobnav__menu-toggle:after {
+  top: 0;
+  /*width: 24px;*/
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-toggle__active .mobnav__menu-toggle:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
