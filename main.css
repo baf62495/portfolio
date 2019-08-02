@@ -542,7 +542,7 @@ h2 {
 .mobnav__list-item {
 	font-size: 28px;
 	font-weight: 600;
-	margin: 1em 0;
+	margin: 0 0 1em;
 }
 
 
