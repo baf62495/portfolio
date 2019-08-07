@@ -202,6 +202,10 @@ h2 {
 	text-align: center;
 }
 
+.fill-bg__black {
+	background: #191919;
+}
+
 .footer__list-item {
 	padding-right: 2.5em;
 }
@@ -302,7 +306,7 @@ h2 {
 }
 
 .top-buffer {
-	padding-top: 120px;
+	padding-top: 100px;
 }
 
 .headshot {
@@ -459,7 +463,8 @@ h2 {
 
 /* Large devices (desktops, 960px and up) */
 @media screen and (min-width: 960px) {
-	.mob__contact-link {
+	.mob__contact-link,
+	.mobnav__menu-toggle {
 		display: none;
 	}
 	.col-md {
