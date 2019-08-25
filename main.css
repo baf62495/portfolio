@@ -317,7 +317,7 @@ h2 {
 
 .projects__img {
 	border: 1px solid black;
-	height: 200px;
+	height: auto;
 	margin-bottom: 32px;
 	width: 100%;
 }
