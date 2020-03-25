@@ -60,14 +60,14 @@ ul {
 
 /* Buttons & links with hover animations */
 
-button {
+.btn {
   min-width: 178px;
   overflow: hidden;
   padding: 14px 30px;
   position: relative;
 }
 
-button:hover {
+.btn:hover {
   cursor: pointer;
 }
 
@@ -116,7 +116,7 @@ button:hover {
   width: 100%;
 }
 
-.projects button {
+.projects .btn {
   margin-top: 12px;
 }
 
@@ -149,15 +149,6 @@ h2 {
   margin-bottom: 6px;
   max-width: 80%;
 }
-/*.intro__highlight:after {
-	    content: "";
-	    position: absolute;
-	    top: 49px;
-	    right: 62px;
-	    width: 56px;
-	    height: 4px;
-	    background: #EBA300;
-	}*/
 
 /* --- Navigation --- */
 
