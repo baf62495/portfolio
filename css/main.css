@@ -61,6 +61,8 @@ ul {
 /* Buttons & links with hover animations */
 
 .btn {
+  display: inline-flex;
+  justify-content: center;
   min-width: 178px;
   overflow: hidden;
   padding: 14px 30px;
@@ -242,7 +244,7 @@ h2 {
   margin: 24px 0;
 }
 
-.content a {
+.content p a {
   color: #eba300;
   font-weight: 600;
 }
@@ -506,7 +508,8 @@ h2 {
   background: #191919;
   padding: 20px 28px;
   z-index: 99;
-  transition: visibility 0s 0s, all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s;
+  transition: visibility 0s 0s,
+    all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s;
 }
 
 .mobnav__open {
